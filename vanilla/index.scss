@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background-color: #404040;
+  color: #c7c7c7;
+}
+
+.app-wrapper {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
