@@ -1,7 +1,7 @@
 {
   "name": "portfolio-page",
   "version": "0.1.0",
-  "homepage": "https://piotr-goraj.github.io/react-gh-pages",
+  "homepage": "https://piotr-goraj.github.io/portfolio-page",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
