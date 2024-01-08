@@ -1,0 +1,7 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.header-bar {
+  @include flexFcn(row, space-between, center);
+  margin: 0.625rem 0;
+}

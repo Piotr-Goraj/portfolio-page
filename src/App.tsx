@@ -1,18 +1,20 @@
+// libs
 import React from 'react';
+
+// components
+import TopBar from './components/TopBar/TopBar';
+import MainContent from './components/MainContent/MainContent';
+import Footer from './components/Footer/Footer';
+
+// scss
+import './App.scss';
 
 const App: React.FC = () => {
   return (
     <div className='app-wrapper'>
-      <header className='header-bar'>
-        <div className='header-bar__logo'>LOGO</div>
-        <div className='header-bar__language'>Select Language</div>
-        <nav className='header-bar__nav'>Page navigation</nav>
-        <div className='header-bar__search'>Search</div>
-      </header>
-
-      <main className='content'>Main content</main>
-
-      <footer className='footer-bar'>FOOTER</footer>
+      <TopBar />
+      <MainContent />
+      <Footer />
     </div>
   );
 };

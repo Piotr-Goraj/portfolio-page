@@ -1,0 +1,7 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.main-content {
+  @include flexFcn(row, center, flex-start);
+  margin: 4vh 0;
+}

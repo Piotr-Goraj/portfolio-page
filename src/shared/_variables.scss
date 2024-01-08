@@ -1,0 +1,22 @@
+// main UI elements
+$corners: 10px;
+$maxAppWidth: 85vw;
+
+$button-style-remove: (
+  margin: 0,
+  padding: 0,
+  border: none,
+  background: none,
+  cursor: pointer,
+);
+
+// colors:
+$font-color: #eaeaea;
+$back-color: #282c34;
+
+$primary-color: #ffc86b;
+
+// Predefined Break-points
+$breakpoint-mobile: 650px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1080px;

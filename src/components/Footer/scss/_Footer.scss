@@ -1,0 +1,14 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  width: 90vw;
+  @include flexFcn(row, center, flex-start);
+  margin: 0.625rem 0;
+  padding: 0.313rem;
+
+  border-radius: $corners;
+  border: 1px $primary-color solid;
+}
