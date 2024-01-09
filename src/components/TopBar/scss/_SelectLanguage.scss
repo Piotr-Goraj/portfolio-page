@@ -1,0 +1,25 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.header-bar__language {
+  .language__dropdown {
+    @each $property, $value in $button-style-remove {
+      #{$property}: $value;
+    }
+
+    width: 8vw;
+    min-width: 5rem;
+
+    color: $font-color;
+  }
+}
+
+.dropdown__img {
+  @include flexFcn(row, space-around, center);
+  font-size: 1rem;
+
+  img {
+    width: 1.5rem;
+    height: auto;
+  }
+}
