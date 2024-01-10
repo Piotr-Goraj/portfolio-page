@@ -1,0 +1,12 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.header-bar__nav {
+  width: unset;
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .header-bar__nav {
+    width: 60%;
+  }
+}

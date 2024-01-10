@@ -4,11 +4,16 @@
 .footer-bar {
   position: fixed;
   bottom: 0;
-  width: 90vw;
+  left: 0;
+  right: 0;
+  // width: 100vw;
+
   @include flexFcn(row, center, flex-start);
-  margin: 0.625rem 0;
+  // margin: 0.625rem 0;
   padding: 0.313rem;
 
   border-radius: $corners;
-  border: 1px $primary-color solid;
+  border-top: 1px $primary-color solid;
+
+  background-color: $back-color;
 }

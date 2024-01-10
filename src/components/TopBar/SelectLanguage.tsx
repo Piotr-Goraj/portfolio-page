@@ -4,6 +4,7 @@ import { Dropdown, Button } from 'antd';
 
 // hooks
 import { useContext, useState } from 'react';
+import { useWindowWidth } from '../../hooks/useWindowSize';
 
 // functions
 import { LanguageContext } from '../../shared/LanguageWrapper';
@@ -17,6 +18,7 @@ import './scss/_TopBar.scss';
 import './scss/_SelectLanguage.scss';
 
 const SelectLanguage: React.FC = () => {
+  const windowWidth = useWindowWidth();
   const langContext = useContext(LanguageContext);
 
   // variables for change language
@@ -24,40 +26,45 @@ const SelectLanguage: React.FC = () => {
   const [currentLang, setCurrentLang] = useState(langContext.locale);
 
   // variables for current language change
-  const languageSelectedText = currentLang === 'en' ? 'English' : 'Polski';
   const languageSelectedFlag = currentLang === 'en' ? enFlag : plFlag;
 
   const items = [
     {
       key: '1',
       label: (
-        <a
+        <Button
           onClick={() => {
             langContext.selectLang('en');
             setCurrentLang('en');
             setSelectedLanguage('English');
           }}
-          className='dropdown__img'
+          className='dropdown__option'
         >
-          <img src={enFlag} />
+          <img
+            src={enFlag}
+            alt='flag'
+          />
           English
-        </a>
+        </Button>
       ),
     },
     {
       key: '2',
       label: (
-        <a
+        <Button
           onClick={() => {
             langContext.selectLang('pl');
             setCurrentLang('pl');
             setSelectedLanguage('Polski');
           }}
-          className='dropdown__img'
+          className='dropdown__option'
         >
-          <img src={plFlag} />
+          <img
+            src={plFlag}
+            alt='flag'
+          />
           Polski
-        </a>
+        </Button>
       ),
     },
   ];
@@ -70,8 +77,12 @@ const SelectLanguage: React.FC = () => {
         }}
         className='language__dropdown'
       >
-        <Button className='dropdown__img'>
-          <img src={languageSelectedFlag} /> {SelectedLenguage}
+        <Button className='dropdown__btn'>
+          <img
+            src={languageSelectedFlag}
+            alt='flag'
+          />
+          {windowWidth >= 650 && SelectedLenguage}
         </Button>
       </Dropdown>
     </div>

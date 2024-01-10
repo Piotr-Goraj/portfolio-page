@@ -7,19 +7,53 @@
       #{$property}: $value;
     }
 
-    width: 8vw;
-    min-width: 5rem;
-
     color: $font-color;
+  }
+
+  .dropdown__btn {
+    @include flexFcn(row, center, center);
+    font-size: 1rem;
+
+    img {
+      margin: 0 0.313rem;
+      width: 1.5rem;
+      height: auto;
+    }
   }
 }
 
-.dropdown__img {
+.dropdown__option {
   @include flexFcn(row, space-around, center);
   font-size: 1rem;
 
+  padding: 0 3rem;
+
+  width: 8vw;
+  min-width: 5rem;
+
   img {
+    margin: 0 0.313rem;
     width: 1.5rem;
     height: auto;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .header-bar__language {
+    .language__dropdown {
+      width: 10vw;
+      min-width: 5rem;
+    }
+  }
+
+  .dropdown__option {
+    width: 10vw;
+    min-width: 5rem;
+
+    img {
+      margin: 0 0.313rem;
+      width: 1.5rem;
+      height: auto;
+    }
   }
 }

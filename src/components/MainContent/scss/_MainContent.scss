@@ -2,6 +2,20 @@
 @import '../../../shared/functions';
 
 .main-content {
-  @include flexFcn(row, center, flex-start);
+  @include flexFcn(column, center, flex-start);
   margin: 4vh 0;
+
+  text-align: justify;
+
+  .content__about {
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .content__portfolio {
+    margin: 1rem 0;
+  }
+
+  .content__contact {
+    margin: 1rem 0;
+  }
 }
