@@ -1,6 +1,9 @@
 // libs
 import React from 'react';
 
+// components
+import { FormattedMessage } from 'react-intl';
+
 // scss
 import './scss/_MainContent.scss';
 
@@ -11,27 +14,10 @@ const MainContent: React.FC = () => {
         className='content__about'
         id='content__about'
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-        ratione, hic rerum dolor quod neque, optio officiis nesciunt numquam
-        suscipit doloribus consequuntur? Nisi pariatur numquam tempora quia
-        ipsum? Tempora, sapiente. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Incidunt ratione, hic rerum dolor quod neque, optio
-        officiis nesciunt numquam suscipit doloribus consequuntur? Nisi pariatur
-        numquam tempora quia ipsum? Tempora, sapiente. Lorem ipsum dolor sit
-        amet consectetur, adipisicing elit. Incidunt ratione, hic rerum dolor
-        quod neque, optio officiis nesciunt numquam suscipit doloribus
-        consequuntur? Nisi pariatur numquam tempora quia ipsum? Tempora,
-        sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Incidunt ratione, hic rerum dolor quod neque, optio officiis nesciunt
-        numquam suscipit doloribus consequuntur? Nisi pariatur numquam tempora
-        quia ipsum? Tempora, sapiente. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Incidunt ratione, hic rerum dolor quod neque, optio
-        officiis nesciunt numquam suscipit doloribus consequuntur? Nisi pariatur
-        numquam tempora quia ipsum? Tempora, sapiente. Lorem ipsum dolor sit
-        amet consectetur, adipisicing elit. Incidunt ratione, hic rerum dolor
-        quod neque, optio officiis nesciunt numquam suscipit doloribus
-        consequuntur? Nisi pariatur numquam tempora quia ipsum? Tempora,
-        sapiente.
+        <FormattedMessage
+          id='content-about'
+          defaultMessage={'About'}
+        />
       </section>
       <section
         className='content__portfolio'

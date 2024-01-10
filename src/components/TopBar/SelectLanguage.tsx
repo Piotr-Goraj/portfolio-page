@@ -1,6 +1,6 @@
 // libs
 import React from 'react';
-import { Dropdown, Button } from 'antd';
+import { Dropdown } from 'antd';
 
 // hooks
 import { useContext, useState } from 'react';
@@ -32,7 +32,7 @@ const SelectLanguage: React.FC = () => {
     {
       key: '1',
       label: (
-        <Button
+        <div
           onClick={() => {
             langContext.selectLang('en');
             setCurrentLang('en');
@@ -45,13 +45,13 @@ const SelectLanguage: React.FC = () => {
             alt='flag'
           />
           English
-        </Button>
+        </div>
       ),
     },
     {
       key: '2',
       label: (
-        <Button
+        <div
           onClick={() => {
             langContext.selectLang('pl');
             setCurrentLang('pl');
@@ -64,7 +64,7 @@ const SelectLanguage: React.FC = () => {
             alt='flag'
           />
           Polski
-        </Button>
+        </div>
       ),
     },
   ];
@@ -77,13 +77,13 @@ const SelectLanguage: React.FC = () => {
         }}
         className='language__dropdown'
       >
-        <Button className='dropdown__btn'>
+        <div className='dropdown__btn'>
           <img
             src={languageSelectedFlag}
             alt='flag'
           />
           {windowWidth >= 650 && SelectedLenguage}
-        </Button>
+        </div>
       </Dropdown>
     </div>
   );

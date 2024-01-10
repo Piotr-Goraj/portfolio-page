@@ -14,33 +14,57 @@ import './scss/_NavBar.scss';
 const NavBar: React.FC = () => {
   return (
     <nav className='header-bar__nav'>
-      <Button
-        type='text'
-        style={{ color: '#fff' }}
+      <Link
+        to='content__about'
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
       >
-        <FormattedMessage
-          id='about'
-          defaultMessage={'About'}
-        />
-      </Button>
-      <Button
-        type='text'
-        style={{ color: '#fff' }}
+        <Button
+          className='nav__btn'
+          type='text'
+        >
+          <FormattedMessage
+            id='about'
+            defaultMessage={'About'}
+          />
+        </Button>
+      </Link>
+      <Link
+        to='content__portfolio'
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
       >
-        <FormattedMessage
-          id='portfolio'
-          defaultMessage={'Portfolio'}
-        />
-      </Button>
-      <Button
-        type='text'
-        style={{ color: '#fff' }}
+        <Button
+          type='text'
+          className='nav__btn'
+        >
+          <FormattedMessage
+            id='portfolio'
+            defaultMessage={'Portfolio'}
+          />
+        </Button>
+      </Link>
+      <Link
+        to='content__contact'
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
       >
-        <FormattedMessage
-          id='contact'
-          defaultMessage={'Contact'}
-        />
-      </Button>
+        <Button
+          type='text'
+          className='nav__btn'
+        >
+          <FormattedMessage
+            id='contact'
+            defaultMessage={'Contact'}
+          />
+        </Button>
+      </Link>
     </nav>
   );
 };

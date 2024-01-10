@@ -3,6 +3,18 @@
 
 .header-bar__nav {
   width: unset;
+
+  .nav__btn {
+    color: $font-color;
+    font-size: 1rem;
+
+    &:hover,
+    &:active {
+      color: $primary-color !important;
+
+      border-bottom: 1px $primary-color solid;
+    }
+  }
 }
 
 @media (min-width: $breakpoint-mobile) {
