@@ -7,8 +7,43 @@
 
   text-align: justify;
 
+  .content__iam {
+    width: 100%;
+    @include flexFcn(row, space-around, center);
+
+    text-align: left;
+
+    .iam__text-area {
+      .text-area__name {
+        margin-bottom: 0.625rem;
+
+        b {
+          color: $primary-color;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    img {
+      margin: 0.625rem;
+      width: 40vw;
+      height: auto;
+
+      $shadow-blur: 5px;
+      $shadow-size: 5px;
+      $shadow-color: #0000003f;
+
+      filter: drop-shadow($shadow-size 0 $shadow-blur $shadow-color)
+        drop-shadow(0 $shadow-size $shadow-blur $shadow-color)
+        // drop-shadow(0 -$shadow-size $shadow-blur $shadow-color)
+        drop-shadow(-$shadow-size 0 $shadow-blur $shadow-color);
+    }
+  }
+
   .content__about {
     margin: 0.5rem 0 1rem 0;
+
+    @include flexFcn(column, center, center);
   }
 
   .content__portfolio {
@@ -17,5 +52,42 @@
 
   .content__contact {
     margin: 1rem 0;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .main-content {
+    margin: 4vh 10vw;
+
+    .content__iam {
+      img {
+        margin: 0 0 2rem 0;
+        width: auto;
+        height: 60vh;
+
+        $shadow-blur: 5px;
+        $shadow-size: 5px;
+        $shadow-color: #0000007e;
+
+        filter: drop-shadow($shadow-size 0 $shadow-blur $shadow-color)
+          drop-shadow(0 $shadow-size $shadow-blur $shadow-color)
+          // drop-shadow(0 -$shadow-size $shadow-blur $shadow-color)
+          drop-shadow(-$shadow-size 0 $shadow-blur $shadow-color);
+      }
+    }
+
+    .content__about {
+      margin: 0.5rem 0 1rem 0;
+
+      @include flexFcn(row, center, center);
+    }
+
+    .content__portfolio {
+      margin: 1rem 0;
+    }
+
+    .content__contact {
+      margin: 1rem 0;
+    }
   }
 }

@@ -2,9 +2,11 @@
   "about": "O mnie",
   "portfolio": "Portfolio",
   "contact": "Kontakt",
-  "search": "Szukaj",
 
-  "content-about": "Jestem studentem studiów magisterskich AWSB w Dąbrowie Górniczej na kierunku informatyka, specjalizacja zarządzanie sztuczną inteligencją. Jestem absolwentem Politechniki Krakowskiej na kierunku elektrotechnika. Należałem do grup badawczych zajmujących się programowaniem mikroprocesorów i grafiką 3D. Dzięki mojemu doświadczeniu zawodowemu zdobyłam umiejętność pracy w zespole i organizowania tej pracy na indywidualne zadania.",
+  "im": "Nazywam się ",
+  "im-title": "Student AWSB oraz Frontend Deweloper",
+
+  "content-about": "Jestem studentem studiów magisterskich AWSB w Dąbrowie Górniczej na kierunku informatyka, specjalizacja zarządzanie sztuczną inteligencją. Jestem absolwentem Politechniki Krakowskiej kierunku elektrotechnika. Należałem do grup naukowych zajmujących się programowaniem mikroprocesorów i grafiką 3D. Dzięki mojemu doświadczeniu zawodowemu zdobyłem umiejętność pracy w zespole i organizowania tej pracy z podziałem na indywidualne zadania.",
 
   "footer": "kontakt: "
 }

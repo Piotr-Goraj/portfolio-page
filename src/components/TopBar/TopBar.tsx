@@ -2,7 +2,6 @@
 import React from 'react';
 
 // components
-import { FormattedMessage } from 'react-intl';
 import SelectLanguage from './SelectLanguage';
 import NavBar from './NavBar';
 
@@ -22,12 +21,6 @@ const TopBar: React.FC = () => {
       />
       <SelectLanguage />
       <NavBar />
-      <div className='header-bar__search'>
-        <FormattedMessage
-          id='search'
-          defaultMessage={'Search'}
-        />
-      </div>
     </header>
   );
 };

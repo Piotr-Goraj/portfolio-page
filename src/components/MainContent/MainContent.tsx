@@ -4,12 +4,37 @@ import React from 'react';
 // components
 import { FormattedMessage } from 'react-intl';
 
+// UI elements
+import profile from '../../imgs/profile.png';
+
 // scss
 import './scss/_MainContent.scss';
 
 const MainContent: React.FC = () => {
   return (
     <main className='main-content'>
+      <section className='content__iam'>
+        <div className='iam__text-area'>
+          <div className='text-area__name'>
+            <FormattedMessage
+              id='im'
+              defaultMessage={"I'M"}
+            />
+            <b>Piotr Goraj</b>
+          </div>
+          <div>
+            <FormattedMessage
+              id='im-title'
+              defaultMessage={"Master's Student of AWSB & Frontend Developer"}
+            />
+          </div>
+        </div>
+        <img
+          src={profile}
+          alt='profile'
+        />
+      </section>
+
       <section
         className='content__about'
         id='content__about'
@@ -19,6 +44,7 @@ const MainContent: React.FC = () => {
           defaultMessage={'About'}
         />
       </section>
+
       <section
         className='content__portfolio'
         id='content__portfolio'
