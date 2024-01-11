@@ -8,6 +8,7 @@
   text-align: justify;
 
   .content__iam {
+    height: 70vh;
     width: 100%;
     @include flexFcn(row, space-around, center);
 
@@ -43,7 +44,19 @@
   .content__about {
     margin: 0.5rem 0 1rem 0;
 
-    @include flexFcn(column, center, center);
+    .about__articles {
+      .about__txt {
+        text-indent: 50px;
+      }
+    }
+
+    .about__skills {
+      h2 {
+        font-size: 1.625rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
   }
 
   .content__portfolio {
@@ -60,6 +73,8 @@
     margin: 4vh 10vw;
 
     .content__iam {
+      height: 90vh;
+
       img {
         margin: 0 0 2rem 0;
         width: auto;
@@ -77,9 +92,18 @@
     }
 
     .content__about {
+      min-height: 80vh;
+      width: 100%;
       margin: 0.5rem 0 1rem 0;
-
       @include flexFcn(row, center, center);
+
+      .about__articles {
+        width: 50%;
+      }
+
+      .about__skills {
+        width: 50%;
+      }
     }
 
     .content__portfolio {

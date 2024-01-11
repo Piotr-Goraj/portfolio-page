@@ -1,0 +1,33 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.wrapper__skill {
+  width: 6rem;
+  height: 4.625rem;
+  padding: 0.625rem;
+  margin: 0.625rem;
+
+  border: 1px $primary-color solid;
+  border-radius: $corners;
+
+  background-color: $secondary-color;
+
+  @include flexFcn(column, center, center);
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 0.313rem 0 0 0;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .wrapper__skill {
+    width: 6rem;
+    height: 6rem;
+  }
+}

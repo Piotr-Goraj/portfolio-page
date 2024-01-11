@@ -5,8 +5,12 @@
   width: unset;
 
   .nav__btn {
+    font-family: 'Courier New', Courier, monospace;
+
     color: $font-color;
     font-size: 1rem;
+
+    padding: 0 0.625rem;
 
     &:hover,
     &:active {
@@ -19,6 +23,7 @@
 
 @media (min-width: $breakpoint-mobile) {
   .header-bar__nav {
-    width: 80%;
+    width: 76%;
+    margin: 0 0 0 4%;
   }
 }

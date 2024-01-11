@@ -1,0 +1,10 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.skills__container {
+  .container__wrapper {
+    @include flexFcn(row, center, center);
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}

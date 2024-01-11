@@ -2,6 +2,8 @@
 @import '../../../shared/functions';
 
 .header-bar__language {
+  font-family: 'Courier New', Courier, monospace;
+
   .language__dropdown {
     @each $property, $value in $button-style-remove {
       #{$property}: $value;
@@ -23,6 +25,8 @@
 }
 
 .dropdown__option {
+  font-family: 'Courier New', Courier, monospace;
+
   @include flexFcn(row, space-around, center);
   font-size: 1rem;
 

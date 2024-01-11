@@ -2,6 +2,9 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
+// hooks
+import { useWindowWidth } from '../../hooks/useWindowSize';
+
 // UI elements
 import { Button } from 'antd';
 
@@ -12,13 +15,17 @@ import { FormattedMessage } from 'react-intl';
 import './scss/_NavBar.scss';
 
 const NavBar: React.FC = () => {
+  const windowWidth = useWindowWidth();
+
+  const offset = windowWidth <= 650 ? -130 : -175;
+
   return (
     <nav className='header-bar__nav'>
       <Link
         to='content__about'
         spy={true}
         smooth={true}
-        offset={-50}
+        offset={offset}
         duration={500}
       >
         <Button
@@ -35,7 +42,7 @@ const NavBar: React.FC = () => {
         to='content__portfolio'
         spy={true}
         smooth={true}
-        offset={-50}
+        offset={offset}
         duration={500}
       >
         <Button
@@ -52,7 +59,7 @@ const NavBar: React.FC = () => {
         to='content__contact'
         spy={true}
         smooth={true}
-        offset={-50}
+        offset={offset}
         duration={500}
       >
         <Button
