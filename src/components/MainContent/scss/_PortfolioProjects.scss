@@ -1,0 +1,12 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.projects__wrapper {
+  @include flexFcn(row, center, center);
+  flex-wrap: wrap;
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .projects__wrapper {
+  }
+}

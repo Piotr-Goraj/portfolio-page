@@ -11,7 +11,9 @@ $button-style-remove: (
 );
 
 // colors:
-$font-color: #eaeaea;
+$font-primary: #eaeaea;
+$font-secondary: invert($font-primary);
+
 $back-color: #282c34;
 
 $primary-color: #ffc86b;

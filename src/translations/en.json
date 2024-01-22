@@ -1,12 +1,22 @@
 {
   "about": "About",
-  "portfolio": "Portfolio",
-  "contact": "Contact",
+  "about-me": "About me",
 
   "im": "I'M ",
   "im-title": "Master's student of AWSB & Frontend developer",
 
   "content-about": "I am a master's student of AWSB in Dąbrowa Górnicza, majoring in computer science, specializing in artificial intelligence management. I am a graduate of the Krakow University of Technology, majoring in electrical engineering. I belonged to research groups dealing with microprocessor programming and 3D graphics. Thanks to my professional experience, I have gained the ability to work in a team and organize this work into individual tasks.",
+  "content-intrests": "I am primarily interested in programming web applications on the frontend. I also have some experience in programming ESP microcontrollers. My passion lies in the broad spectrum of rapid prototyping, encompassing three-dimensional graphic design using Fusion 360 and the creation of 3D prints.",
+
+  "portfolio": "Portfolio",
+  "see-more": "< See more >",
+  "fragor-description": "FraGor",
+  "PCS-description": "Engineering thesis",
+  "portfolio-description": "Portfolio page",
+  "FA-description": "Family assistant app",
+  "aquarium-description": "Simple arduino project",
+
+  "contact": "Contact",
 
   "footer": "contact: "
 }

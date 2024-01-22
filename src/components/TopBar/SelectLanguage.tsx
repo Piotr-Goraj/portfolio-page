@@ -74,6 +74,8 @@ const SelectLanguage: React.FC = () => {
       <Dropdown
         menu={{
           items,
+          theme: 'dark',
+          style: { width: '10vw', minWidth: '10rem' },
         }}
         className='language__dropdown'
       >

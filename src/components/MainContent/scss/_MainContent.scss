@@ -51,6 +51,7 @@
     }
 
     .about__skills {
+      margin: 1rem 0;
       h2 {
         font-size: 1.625rem;
         font-weight: bold;
@@ -61,10 +62,12 @@
 
   .content__portfolio {
     margin: 1rem 0;
+    width: 100%;
   }
 
   .content__contact {
     margin: 1rem 0;
+    width: 100%;
   }
 }
 
@@ -95,14 +98,27 @@
       min-height: 80vh;
       width: 100%;
       margin: 0.5rem 0 1rem 0;
-      @include flexFcn(row, center, center);
+      // @include flexFcn(row, center, center);
 
-      .about__articles {
-        width: 50%;
+      @include gridFcn(
+        50% 50%,
+        50% 50%,
+        'article__about article__skills' 'article__intrests article__skills',
+        0 1rem
+      );
+
+      .article__about {
+        align-self: self-end;
+        padding-bottom: 2rem;
       }
 
-      .about__skills {
-        width: 50%;
+      .article__intrests {
+        align-self: self-start;
+        padding-top: 2rem;
+      }
+
+      .article__skills {
+        align-self: self-start;
       }
     }
 

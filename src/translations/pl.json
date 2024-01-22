@@ -1,12 +1,22 @@
 {
   "about": "O mnie",
-  "portfolio": "Portfolio",
-  "contact": "Kontakt",
+  "about-me": "O mnie",
 
   "im": "Nazywam się ",
   "im-title": "Student AWSB oraz Frontend Deweloper",
 
   "content-about": "Jestem studentem studiów magisterskich AWSB w Dąbrowie Górniczej na kierunku informatyka, specjalizacja zarządzanie sztuczną inteligencją. Jestem absolwentem Politechniki Krakowskiej kierunku elektrotechnika. Należałem do grup naukowych zajmujących się programowaniem mikroprocesorów i grafiką 3D. Dzięki mojemu doświadczeniu zawodowemu zdobyłem umiejętność pracy w zespole i organizowania tej pracy z podziałem na indywidualne zadania.",
+  "content-intrests": "Interesuję się głównie programowaniem aplikacji internetowych po stronie frontendowej. Posiadam także niewielkie doświadczenie w programowaniu mikrokontrolerów ESP. Moją pasją jest szeroko pojęte szybkie prototypowanie, które obejmuje projektowanie grafiki trójwymiarowej w programie Fusion 360 oraz tworzenie wydruków 3D.",
+
+  "portfolio": "Portfolio",
+  "see-more": "< Więcej >",
+  "fragor-description": "Aplikacja webowa pomagająca monitorować proces druku 3D...",
+  "PCS-description": "Praca inżynierska",
+  "portfolio-description": "Strona portfolio",
+  "FA-description": "Aplikacja asystenta rodziny",
+  "aquarium-description": "Prosty projekt arduino",
+
+  "contact": "Kontakt",
 
   "footer": "kontakt: "
 }

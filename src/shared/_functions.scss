@@ -13,3 +13,14 @@
   -ms-flex-direction: $direction;
   flex-direction: $direction;
 }
+
+@mixin gridFcn($columns-size, $rows-size, $areas, $gap) {
+  display: grid;
+  grid-template-columns: $columns-size; // 50px 50px
+  grid-template-rows: $rows-size; // 25px 25px 25px
+  grid-template-areas: $areas;
+  // " header header "
+  // " main main "
+  //  " footer footer "
+  gap: $gap;
+}

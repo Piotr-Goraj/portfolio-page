@@ -9,7 +9,7 @@
       #{$property}: $value;
     }
 
-    color: $font-color;
+    color: $font-primary;
   }
 
   .dropdown__btn {
@@ -27,7 +27,7 @@
 .dropdown__option {
   font-family: 'Courier New', Courier, monospace;
 
-  @include flexFcn(row, space-around, center);
+  @include flexFcn(row, flex-start, center);
   font-size: 1rem;
 
   width: 8vw;
