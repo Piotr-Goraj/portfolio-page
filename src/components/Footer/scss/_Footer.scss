@@ -7,8 +7,9 @@
   left: 0;
   right: 0;
   // width: 100vw;
+  height: 5vh;
 
-  @include flexFcn(row, center, flex-start);
+  @include flexFcn(row, center, center);
   // margin: 0.625rem 0;
   padding: 0.313rem;
 
@@ -16,4 +17,27 @@
   border-top: 1px $primary-color solid;
 
   background-color: $back-color;
+
+  .footer__link {
+    @each $property, $value in $button-style-remove {
+      #{$property}: $value;
+    }
+
+    font-size: 1rem;
+
+    color: $font-primary;
+
+    margin: 0 0.313rem;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .footer-bar {
+    height: 4vh;
+    font-size: 1.125rem;
+
+    .footer__link {
+      font-size: 1.125rem;
+    }
+  }
 }

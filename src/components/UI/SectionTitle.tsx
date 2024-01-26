@@ -17,10 +17,11 @@ const StyledTitle = styled.h1`
 `;
 
 interface SectionTitleProps {
+  children?: React.ReactNode;
   title: string;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
+const SectionTitle: React.FC<SectionTitleProps> = ({ children, title }) => {
   return (
     <div>
       <style>{`
@@ -30,7 +31,10 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
       }
     }
   `}</style>
-      <StyledTitle>{title}</StyledTitle>
+      <StyledTitle>
+        {children}
+        {` ${title}`}
+      </StyledTitle>
     </div>
   );
 };

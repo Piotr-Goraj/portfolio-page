@@ -9,6 +9,7 @@ import { FormattedMessage } from 'react-intl';
 import Skills from './Skills';
 
 // UI elements
+import '../../fonts/fontello/css/portfolio.css';
 import profile from '../../imgs/profile.png';
 import SectionTitle from '../UI/SectionTitle';
 
@@ -48,7 +49,9 @@ const MainContent: React.FC = () => {
           id: 'about-me',
           defaultMessage: 'About me',
         })}
-      />
+      >
+        <i className='icon-about'></i>
+      </SectionTitle>
 
       <section
         className='content__about'
@@ -83,7 +86,9 @@ const MainContent: React.FC = () => {
           id: 'portfolio',
           defaultMessage: 'Portfolio',
         })}
-      />
+      >
+        <i className='icon-portfolio'></i>
+      </SectionTitle>
       <section
         className='content__portfolio'
         id='content__portfolio'
@@ -93,36 +98,42 @@ const MainContent: React.FC = () => {
 
       <SectionTitle
         title={intl.formatMessage({
-          id: 'contact',
-          defaultMessage: 'Contact',
+          id: 'experience',
+          defaultMessage: 'Experience',
         })}
-      />
+      >
+        <i className='icon-experience'></i>
+      </SectionTitle>
       <section
         className='content__contact'
         id='content__contact'
+      ></section>
+
+      <SectionTitle
+        title={intl.formatMessage({
+          id: 'education',
+          defaultMessage: 'Education',
+        })}
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-        ratione, hic rerum dolor quod neque, optio officiis nesciunt numquam
-        suscipit doloribus consequuntur? Nisi pariatur numquam tempora quia
-        ipsum? Tempora, sapiente. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Incidunt ratione, hic rerum dolor quod neque, optio
-        officiis nesciunt numquam suscipit doloribus consequuntur? Nisi pariatur
-        numquam tempora quia ipsum? Tempora, sapiente. Lorem ipsum dolor sit
-        amet consectetur, adipisicing elit. Incidunt ratione, hic rerum dolor
-        quod neque, optio officiis nesciunt numquam suscipit doloribus
-        consequuntur? Nisi pariatur numquam tempora quia ipsum? Tempora,
-        sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Incidunt ratione, hic rerum dolor quod neque, optio officiis nesciunt
-        numquam suscipit doloribus consequuntur? Nisi pariatur numquam tempora
-        quia ipsum? Tempora, sapiente. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Incidunt ratione, hic rerum dolor quod neque, optio
-        officiis nesciunt numquam suscipit doloribus consequuntur? Nisi pariatur
-        numquam tempora quia ipsum? Tempora, sapiente. Lorem ipsum dolor sit
-        amet consectetur, adipisicing elit. Incidunt ratione, hic rerum dolor
-        quod neque, optio officiis nesciunt numquam suscipit doloribus
-        consequuntur? Nisi pariatur numquam tempora quia ipsum? Tempora,
-        sapiente.
-      </section>
+        <i className='icon-education'></i>
+      </SectionTitle>
+      <section
+        className='content__contact'
+        id='content__contact'
+      ></section>
+
+      <SectionTitle
+        title={intl.formatMessage({
+          id: 'contact',
+          defaultMessage: 'Contact',
+        })}
+      >
+        <i className='icon-contact'></i>
+      </SectionTitle>
+      <section
+        className='content__contact'
+        id='content__contact'
+      ></section>
     </main>
   );
 };

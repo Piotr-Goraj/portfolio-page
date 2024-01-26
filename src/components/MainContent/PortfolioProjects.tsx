@@ -13,6 +13,8 @@ import './scss/_PortfolioProjects.scss';
 // UI elements
 import fragorLogo from '../../imgs/fragor-white.png';
 import pgLogo from '../../imgs/PG_logo.svg';
+import powerLogo from '../../imgs/logo_power_management.png';
+import aquaLogo from '../../imgs/aqua.png';
 
 const PortfolioProjects: React.FC = () => {
   const intl = useIntl();
@@ -26,16 +28,16 @@ const PortfolioProjects: React.FC = () => {
           id: 'fragor-description',
           defaultMessage: 'FraGor-description',
         })}
-        link=''
+        link='https://github.com/ScienceWebProjects/fragor-portfolio'
       />
       <ProjectInfo
-        image=''
+        image={powerLogo}
         title='Power control system'
         description={intl.formatMessage({
           id: 'PCS-description',
           defaultMessage: 'PSC-description',
         })}
-        link=''
+        link='https://github.com/Piotr-Goraj/power-control-system'
       />
       <ProjectInfo
         image={pgLogo}
@@ -44,9 +46,9 @@ const PortfolioProjects: React.FC = () => {
           id: 'portfolio-description',
           defaultMessage: 'portfolio-description',
         })}
-        link=''
+        link='https://github.com/Piotr-Goraj/portfolio-page'
       />
-      <ProjectInfo
+      {/* <ProjectInfo
         image=''
         title='Family assistant'
         description={intl.formatMessage({
@@ -54,15 +56,15 @@ const PortfolioProjects: React.FC = () => {
           defaultMessage: 'FA-description',
         })}
         link=''
-      />
+      /> */}
       <ProjectInfo
-        image=''
+        image={aquaLogo}
         title='Aquarium automatition'
         description={intl.formatMessage({
           id: 'aquarium-description',
           defaultMessage: 'aquarium-description',
         })}
-        link=''
+        link='https://github.com/Piotr-Goraj/aquarium-automatition'
       />
     </div>
   );

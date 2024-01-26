@@ -11,10 +11,14 @@
   "portfolio": "Portfolio",
   "see-more": "< Więcej >",
   "fragor-description": "Aplikacja webowa pomagająca monitorować proces druku 3D...",
-  "PCS-description": "Praca inżynierska",
-  "portfolio-description": "Strona portfolio",
-  "FA-description": "Aplikacja asystenta rodziny",
-  "aquarium-description": "Prosty projekt arduino",
+  "PCS-description": "Projekt wykonany jako praca inżynierska. Obecnie w przebudowie...",
+  "portfolio-description": "Kod źródłowy strony na  której właśnie się znajdujesz...",
+  "FA-description": "Aplikacja mobilna asystenta rodziny. Projekt tworzony jako nauka react native...",
+  "aquarium-description": "Prosty projekt arduino automatyzujący niektóre procesy domowej akwarystyki...",
+
+  "experience": "Doświadczenie",
+
+  "education": "Edukacja",
 
   "contact": "Kontakt",
 

@@ -4,7 +4,7 @@ import React from 'react';
 // components
 import TopBar from './components/TopBar/TopBar';
 import MainContent from './components/MainContent/MainContent';
-import Footer from './components/Footer/Footer';
+import Footer from './components/MainContent/Footer/Footer';
 
 // scss
 import './App.scss';

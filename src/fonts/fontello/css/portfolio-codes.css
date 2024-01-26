@@ -1,0 +1,8 @@
+
+.icon-experience:before { content: '\e800'; } /* '' */
+.icon-about:before { content: '\e801'; } /* '' */
+.icon-contact:before { content: '\e802'; } /* '' */
+.icon-portfolio:before { content: '\e803'; } /* '' */
+.icon-mail:before { content: '\f0e0'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-education:before { content: '\f19d'; } /* '' */

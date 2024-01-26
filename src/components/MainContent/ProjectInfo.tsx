@@ -25,6 +25,10 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
     backgroundImage: `url(${image})`,
   };
 
+  const buttonHandler = (): void => {
+    window.open(link, '_blank');
+  };
+
   return (
     <div
       className='project__info'
@@ -37,6 +41,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
           type='primary'
           htmlType='button'
           className='info__btn'
+          onClick={buttonHandler}
         >
           <FormattedMessage
             id='see-more'

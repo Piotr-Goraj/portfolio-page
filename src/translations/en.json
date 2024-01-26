@@ -10,11 +10,15 @@
 
   "portfolio": "Portfolio",
   "see-more": "< See more >",
-  "fragor-description": "FraGor",
-  "PCS-description": "Engineering thesis",
-  "portfolio-description": "Portfolio page",
-  "FA-description": "Family assistant app",
-  "aquarium-description": "Simple arduino project",
+  "fragor-description": "Web application that helps monitor the 3D printing process...",
+  "PCS-description": "The project was created as an engineering work. Currently under reconstruction...",
+  "portfolio-description": "The source code of the page you are currently on...",
+  "FA-description": "Mobile application for a family assistant. Project created as a react native learning...",
+  "aquarium-description": "A simple Arduino project that automates some home aquarium processes...",
+
+  "experience": "Experience",
+
+  "education": "Education",
 
   "contact": "Contact",
 
