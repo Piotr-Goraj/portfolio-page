@@ -2,7 +2,7 @@
 import React from 'react';
 
 // components
-import { Button } from 'antd';
+import { Button, message } from 'antd';
 
 // UI elements
 import '../../fonts/fontello/css/portfolio.css';
@@ -11,6 +11,8 @@ import '../../fonts/fontello/css/portfolio.css';
 import './scss/_Footer.scss';
 
 const Footer: React.FC = () => {
+  const [messageApi, contextHolder] = message.useMessage();
+
   const copyToClipboard = (text: string): void => {
     const textarea = document.createElement('textarea');
     textarea.value = text;
@@ -24,6 +26,12 @@ const Footer: React.FC = () => {
   const mailHandler = (): void => {
     const email: string = 'pg.portfolio.contact@gmail.com';
     copyToClipboard(email);
+
+    messageApi.open({
+      type: 'success',
+      content: 'E-mail copied to clipboard.',
+      className: 'email-message',
+    });
   };
 
   const linkedinHandler = (): void => {
@@ -48,6 +56,7 @@ const Footer: React.FC = () => {
       >
         <i className='icon-linkedin'></i>
       </Button>
+      {contextHolder}
     </footer>
   );
 };

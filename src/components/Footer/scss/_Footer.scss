@@ -1,6 +1,11 @@
 @import '../../../shared/variables';
 @import '../../../shared/functions';
 
+.email-message {
+  width: 25vw;
+  margin: 0 auto;
+}
+
 .footer-bar {
   position: fixed;
   bottom: 0;
