@@ -1,0 +1,71 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.contact__form {
+  @include flexFcn(column, center, center);
+
+  min-height: 4rem;
+  margin: 0.625rem 0;
+
+  width: 100%;
+
+  color: $font-primary;
+  background-color: $secondary-color;
+  border-radius: $corners;
+
+  form {
+    width: 80%;
+
+    .form__email {
+      margin: 1rem auto 0.625rem auto;
+      background-color: $font-primary;
+    }
+
+    .form__message {
+      margin: 0 auto 0.625rem auto;
+
+      textarea {
+        background-color: $font-primary;
+      }
+    }
+
+    .form__submit {
+      @each $property, $value in $button-style-remove {
+        #{$property}: $value;
+      }
+
+      padding: 0.313rem;
+      width: 30%;
+      margin: 0.313rem auto;
+
+      color: $font-secondary;
+      background-color: $primary-color;
+      border-radius: $corners;
+    }
+  }
+}
+
+.ant-input-data-count {
+  color: $font-primary !important; /* Tutaj zmień kolor licznika na dowolny inny */
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .contact__form {
+    min-height: 20rem;
+
+    form {
+      width: 90%;
+
+      .form__email {
+      }
+
+      .form__message {
+        textarea {
+        }
+      }
+
+      .form__submit {
+      }
+    }
+  }
+}

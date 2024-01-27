@@ -1,0 +1,14 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+.contact__wrapper {
+  width: 100%;
+  @include flexFcn(column, flex-start, center);
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .contact__wrapper {
+    width: 100%;
+    @include flexFcn(row, center, flex-start);
+  }
+}

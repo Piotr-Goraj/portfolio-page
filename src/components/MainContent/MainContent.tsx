@@ -7,6 +7,7 @@ import { useIntl } from 'react-intl';
 // components
 import { FormattedMessage } from 'react-intl';
 import Skills from './Skills';
+import Contact from './Contact';
 
 // UI elements
 import '../../fonts/fontello/css/portfolio.css';
@@ -105,8 +106,8 @@ const MainContent: React.FC = () => {
         <i className='icon-experience'></i>
       </SectionTitle>
       <section
-        className='content__contact'
-        id='content__contact'
+        className='content__experience'
+        id='content__experience'
       ></section>
 
       <SectionTitle
@@ -118,8 +119,8 @@ const MainContent: React.FC = () => {
         <i className='icon-education'></i>
       </SectionTitle>
       <section
-        className='content__contact'
-        id='content__contact'
+        className='content__education'
+        id='content__education'
       ></section>
 
       <SectionTitle
@@ -133,7 +134,9 @@ const MainContent: React.FC = () => {
       <section
         className='content__contact'
         id='content__contact'
-      ></section>
+      >
+        <Contact />
+      </section>
     </main>
   );
 };

@@ -30,8 +30,8 @@ const Template = (args) => {
   );
 };
 
-export const Messages_types = Template.bind({});
-Messages_types.args = {
+export const MessagesTypes = Template.bind({});
+MessagesTypes.args = {
   htmlType: 'button',
   content: 'This is message!',
   type: 'success',
