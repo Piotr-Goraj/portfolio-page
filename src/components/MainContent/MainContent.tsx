@@ -8,6 +8,7 @@ import { useIntl } from 'react-intl';
 import { FormattedMessage } from 'react-intl';
 import Skills from './Skills';
 import Contact from './Contact';
+import TimelineElement from './TimelineElement';
 
 // UI elements
 import '../../fonts/fontello/css/portfolio.css';
@@ -68,7 +69,12 @@ const MainContent: React.FC = () => {
         </div>
 
         <div className='about__skills article__skills'>
-          <h2>Skills</h2>
+          <h2>
+            <FormattedMessage
+              id='skills'
+              defaultMessage={'Skills'}
+            />
+          </h2>
           <Skills />
         </div>
 
@@ -108,7 +114,23 @@ const MainContent: React.FC = () => {
       <section
         className='content__experience'
         id='content__experience'
-      ></section>
+      >
+        <TimelineElement
+          date='03.2023'
+          name={intl.formatMessage({
+            id: 'experience-fragor-name',
+            defaultMessage: 'Non-commercial (group project)',
+          })}
+          details={intl.formatMessage({
+            id: 'experience-fragor-details',
+            defaultMessage: 'Frontend-dev',
+          })}
+          description={intl.formatMessage({
+            id: 'experience-fragor-description',
+            defaultMessage: 'FraGor experience',
+          })}
+        />
+      </section>
 
       <SectionTitle
         title={intl.formatMessage({
@@ -121,7 +143,39 @@ const MainContent: React.FC = () => {
       <section
         className='content__education'
         id='content__education'
-      ></section>
+      >
+        <TimelineElement
+          date='10.2023 - present'
+          name={intl.formatMessage({
+            id: 'education-wsb-name',
+            defaultMessage: 'WSB University',
+          })}
+          details={intl.formatMessage({
+            id: 'education-master',
+            defaultMessage: 'Master of Engineering',
+          })}
+          description={intl.formatMessage({
+            id: 'education-wsb',
+            defaultMessage: 'WSB education',
+          })}
+        />
+
+        <TimelineElement
+          date='10.2019 - 01.2023'
+          name={intl.formatMessage({
+            id: 'education-cracow-name',
+            defaultMessage: 'Cracow University of Technology',
+          })}
+          details={intl.formatMessage({
+            id: 'education-bechelor',
+            defaultMessage: 'Bachelor of Engineering',
+          })}
+          description={intl.formatMessage({
+            id: 'education-cracow',
+            defaultMessage: 'Cracow University of Technology education',
+          })}
+        />
+      </section>
 
       <SectionTitle
         title={intl.formatMessage({

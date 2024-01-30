@@ -7,6 +7,7 @@
 
   "content-about": "I am a master's student of AWSB in Dąbrowa Górnicza, majoring in computer science, specializing in artificial intelligence management. I am a graduate of the Krakow University of Technology, majoring in electrical engineering. I belonged to research groups dealing with microprocessor programming and 3D graphics. Thanks to my professional experience, I have gained the ability to work in a team and organize this work into individual tasks.",
   "content-intrests": "I am primarily interested in programming web applications on the frontend. I also have some experience in programming ESP microcontrollers. My passion lies in the broad spectrum of rapid prototyping, encompassing three-dimensional graphic design using Fusion 360 and the creation of 3D prints.",
+  "skills": "Skills",
 
   "portfolio": "Portfolio",
   "see-more": "< See more >",
@@ -17,10 +18,23 @@
   "aquarium-description": "A simple Arduino project that automates some home aquarium processes...",
 
   "experience": "Experience",
+  "experience-fragor-name": "Non-commercial group project",
+  "experience-fragor-details": "Frontend dev",
+  "experience-fragor-description": "I have non-commercial experience in group work as a front-end developer. The project has been implemented since March last year. In May 2023, he won a distinction at the national scientific symposium at the Military University of Technology, and in June he won the national Young Scientist competition.",
 
   "education": "Education",
+  "education-wsb-name": "WSB University",
+  "education-wsb": "WSB education",
+  "education-master": "Master of Engineering",
+  "education-cracow-name": "Cracow University of Technology",
+  "education-cracow": "CUoT education",
+  "education-bechelor": "Bachelor of Engineering",
 
   "contact": "Contact",
+  "contact-correct": "E-mail wysłany prawidłowo!",
+  "contact-linkedin": "My LinkedIn profile",
+  "contact-email": "Enter your e-mail",
+  "contact-txt": "Write message to me!",
 
-  "footer": "contact: "
+  "send": "Send"
 }

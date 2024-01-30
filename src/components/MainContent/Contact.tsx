@@ -2,6 +2,7 @@
 import React from 'react';
 
 // components
+import { FormattedMessage } from 'react-intl';
 import { Button } from 'antd';
 import ContactForm from './ContactForm';
 
@@ -23,7 +24,11 @@ const Contact: React.FC = () => {
         onClick={contactLinkHandler}
         className='contact__link'
       >
-        <i className='icon-linkedin'></i>&nbsp; My LinkedIn profile
+        <i className='icon-linkedin'></i>&nbsp;
+        <FormattedMessage
+          id='contact-linkedin'
+          defaultMessage='My LinkedIn profile'
+        />
       </Button>
 
       <ContactForm />

@@ -60,14 +60,18 @@
     }
   }
 
-  .content__portfolio {
-    margin: 1rem 0;
+  .content__portfolio,
+  .content__contact,
+  .content__experience,
+  .content__education {
+    margin: 1rem auto;
     width: 100%;
   }
 
-  .content__contact {
-    margin: 1rem 0;
+  .content__experience,
+  .content__education {
     width: 100%;
+    margin: 0.625rem auto;
   }
 }
 

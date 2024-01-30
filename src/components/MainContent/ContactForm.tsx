@@ -2,14 +2,18 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 
+// hooks
+import { FormattedMessage, useIntl } from 'react-intl';
+
 // components
-import { Button, Input } from 'antd';
+import { Button, Input, message } from 'antd';
 
 // scss
 import './scss/_ContactForm.scss';
 
 const ContactForm: React.FC = () => {
-  // pg.portfolio.contact@gmail.com
+  const intl = useIntl();
+  const [messageApi, contextHolder] = message.useMessage();
   const { TextArea } = Input;
 
   const contactFormHandler = async (
@@ -37,43 +41,63 @@ const ContactForm: React.FC = () => {
         { email_from: emailFrom, message: message },
         publicKey
       );
-      alert('Email sent successfully!');
+      messageApi.open({
+        content: intl.formatMessage({
+          id: 'contact-correct',
+          defaultMessage: 'E-mail sent correctly!',
+        }),
+        type: 'success',
+        duration: 1,
+      });
     } catch (error) {
       console.error('Error occurred while sending email:', error);
     }
   };
 
   return (
-    <div className='contact__form'>
-      <form onSubmit={contactFormHandler}>
-        <Input
-          name='email_from'
-          id='emailFrom'
-          className='form__email'
-          placeholder='Enter your e-mail'
-          type='email'
-          required
-        />
-        <TextArea
-          name='message'
-          id='message'
-          className='form__message'
-          placeholder='Write message to me!'
-          count={{ show: true }}
-          autoSize={{
-            minRows: 8,
-            maxRows: 10,
-          }}
-          required
-        />
-        <Button
-          htmlType='submit'
-          className='form__submit'
-        >
-          Send
-        </Button>
-      </form>
-    </div>
+    <>
+      <div className='contact__form'>
+        <form onSubmit={contactFormHandler}>
+          <Input
+            name='email_from'
+            id='emailFrom'
+            className='form__email'
+            placeholder={intl.formatMessage({
+              id: 'contact-email',
+              defaultMessage: 'Enter your e-mail',
+            })}
+            type='email'
+            required
+          />
+          <TextArea
+            name='message'
+            id='message'
+            className='form__message'
+            placeholder={intl.formatMessage({
+              id: 'contact-txt',
+              defaultMessage: 'Write message to me!',
+            })}
+            count={{ show: true }}
+            autoSize={{
+              minRows: 8,
+              maxRows: 10,
+            }}
+            required
+          />
+          <Button
+            htmlType='submit'
+            className='form__submit'
+          >
+            <FormattedMessage
+              id='send'
+              defaultMessage='Send'
+            />
+          </Button>
+        </form>
+      </div>
+
+      {contextHolder}
+    </>
   );
 };
 

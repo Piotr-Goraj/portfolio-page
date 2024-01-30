@@ -7,6 +7,7 @@
 
   "content-about": "Jestem studentem studiów magisterskich AWSB w Dąbrowie Górniczej na kierunku informatyka, specjalizacja zarządzanie sztuczną inteligencją. Jestem absolwentem Politechniki Krakowskiej kierunku elektrotechnika. Należałem do grup naukowych zajmujących się programowaniem mikroprocesorów i grafiką 3D. Dzięki mojemu doświadczeniu zawodowemu zdobyłem umiejętność pracy w zespole i organizowania tej pracy z podziałem na indywidualne zadania.",
   "content-intrests": "Interesuję się głównie programowaniem aplikacji internetowych po stronie frontendowej. Posiadam także niewielkie doświadczenie w programowaniu mikrokontrolerów ESP. Moją pasją jest szeroko pojęte szybkie prototypowanie, które obejmuje projektowanie grafiki trójwymiarowej w programie Fusion 360 oraz tworzenie wydruków 3D.",
+  "skills": "Umiejętności",
 
   "portfolio": "Portfolio",
   "see-more": "< Więcej >",
@@ -17,10 +18,23 @@
   "aquarium-description": "Prosty projekt arduino automatyzujący niektóre procesy domowej akwarystyki...",
 
   "experience": "Doświadczenie",
+  "experience-fragor-name": "Nie komercyjny projekt grupowy",
+  "experience-fragor-details": "Frontend deweloper",
+  "experience-fragor-description": "Posiadam rok niekomercyjnnego doświadczenia w pracy grupowej jako front-end developer. Projekt realizowany jest od marca ubiegłego roku. W maju 2023 zdobył wyróżnienie na ogólnopolskim sympozjum naukowym w Akademii Wojskowej Technologii, a w czerwcu został zwycięzcą ogólnopolskiego konkursu Młodych Naukowców.",
 
   "education": "Edukacja",
+  "education-wsb-name": "Akademia WSB",
+  "education-wsb": "Edukacja na WSB",
+  "education-master": "Magister inżynier",
+  "education-cracow-name": "Politechnika Krakowska",
+  "education-cracow": "Edukacja na Politechnice Krakowskiej",
+  "education-bechelor": "Inżynier",
 
   "contact": "Kontakt",
+  "contact-correct": "E-mail wysłany prawidłowo!",
+  "contact-linkedin": "Mój profil LinkedIn",
+  "contact-email": "Wprowadź swój e-mail",
+  "contact-txt": "Napisz do mnie wiadomość!",
 
-  "footer": "kontakt: "
+  "send": "Wyślij"
 }

@@ -1,0 +1,84 @@
+@import '../../../shared/variables';
+@import '../../../shared/functions';
+
+$element-height: 30vh;
+
+.timeline-element {
+  min-height: 30vh;
+
+  .element__date {
+  }
+
+  .element__marker {
+    display: none;
+  }
+
+  .element__description {
+    @include flexFcn(column, flex-start, flex-start);
+    color: $font-primary;
+
+    .description__name {
+      margin: 0.625rem 0;
+      font-size: 1.625rem;
+      text-align: left;
+    }
+
+    .description__details {
+      color: $primary-color;
+      margin: 0;
+      font-size: 1.313rem;
+      text-align: left;
+    }
+
+    .description__text {
+      margin: 0.625rem auto;
+      font-size: 1rem;
+      text-align: justify;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .timeline-element {
+    @include flexFcn(row, center, center);
+    min-height: unset;
+    height: $element-height;
+
+    .element__date {
+      width: 25%;
+      text-align: end;
+      padding: 0 0.625rem;
+      margin: 0 0.625rem;
+      height: calc(#{$element-height} - 1rem);
+    }
+
+    .element__marker {
+      width: 10%;
+      height: calc(#{$element-height} - 1rem);
+
+      @include flexFcn(column, flex-start, center);
+
+      .marker__dot {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        filter: blur(1.5px);
+        box-shadow: 0 0 40px 4px #a18048;
+        background-color: $primary-color;
+      }
+
+      .marker__line {
+        margin: 10px auto;
+        background-color: $font-primary;
+        width: 2px;
+        height: calc(#{$element-height} - 50px);
+      }
+    }
+
+    .element__description {
+      @include flexFcn(column, flex-start, flex-start);
+      height: calc(#{$element-height} - 1rem);
+      margin: 0 0.625rem;
+    }
+  }
+}

@@ -32,8 +32,9 @@ const Template = (args) => {
 
 export const MessagesTypes = Template.bind({});
 MessagesTypes.args = {
-  htmlType: 'button',
   content: 'This is message!',
   type: 'success',
   duration: 1,
 };
+
+export const MessagesFunctions = Template.bind({});
